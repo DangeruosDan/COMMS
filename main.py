@@ -1,6 +1,6 @@
 import socket, sys
 
-def listener(port=4444,numOfCons = 1):
+def listener(port=4444,numOfCons = 3):
     serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     serversocket.bind((socket.gethostname(), port))
     serversocket.listen(numOfCons)
